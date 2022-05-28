@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	
+	<!-- My CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="new.css">
+	
+
+	<title></title>
+	<style>  
+	 * {
+        box-sizing: border-box;
+      }
+      .openBtn {
+        display: flex;
+        justify-content: left;
+      }
+      .openButton {
+        border: none;
+        border-radius: 5px;
+        background-color: ;
+        color: white;
+        padding: 14px 20px;
+        cursor: pointer;
+      
+      }
+      .loginPopup {
+        position: relative;
+        text-align: center;
+        width: 100%;
+      }
+      .formPopup {
+        display: none;
+        position: fixed;
+        left: 45%;
+        top: 55%;
+        transform: translate(-50%, 5%);
+        border: 3px solid #999999;
+		border-radius: 18px;
+        z-index: 9;
+      }
+      .formContainer {
+        max-width: 300px;
+        padding: 20px;
+        background-color: #fff;
+		border-radius: 18 px;
+      }
+      .formContainer input[type=text],
+      .formContainer input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 20px 0;
+        border: none;
+        background: #eee;
+      }
+      .formContainer input[type=text]:focus,
+      .formContainer input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+      .formContainer .btn {
+        padding: 12px 20px;
+        border: none;
+		border-radius: 18px;
+        background-color: blue;
+        color: #fff;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 15px;
+        opacity: 0.8;
+      }
+      .formContainer .cancel {
+		border-radius: 12px;
+        background-color: #cc0000;
+      }
+      .formContainer .btn:hover,
+      .openButton:hover {
+        opacity: 1;
+      }
+	
+	.button {
+		background-color: rgb(91, 93, 225);
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 3px 2px;
+		cursor: pointer;
+		border-radius: 12px;
+		align-self: center;
+	  }
+	  </style>
+</head>
+<body>
+	<button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+	data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+	aria-label="Toggle navigation" >
+<span data-feather="grid"></span>
+</button>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="index.html" class="navbar-brand heading-blac">
+			
+			<span class="text" style="color: #0ee6b0;"><h2>&nbsp;&nbsp;&nbsp;PARKINGPAY</h2></span>
+		</a>
+		<ul class="side-menu ">
+			<li class="active">
+				<a href="#">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			
+			<li>
+				<a href="#">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Analytics</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text">Message</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Team</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="by by.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			</a>
+			<a href="#" class="profile">
+				<h3>Deep</h3>
+			</a>
+			
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			
+			<ul class="box-info">
+				<li>
+					<i class="fa fa-th" style="font-size:35px;color:blue"></i>
+					<span class="text">
+						<h3>100</h3>
+						<p>TOTAL SLOTS</p><br>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-group' ></i>
+					<span class="text">
+						<h3>60</h3>
+						<p>OCCUPIED</p><br><br>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-group' ></i>
+					<span class="text">
+						<h3>40</h3>
+						<p>REMAINING</p><br>
+					</span>
+				</li>
+			</ul>
+			<ul class="box-info">
+				<li>
+				&nbsp;<i class="fa fa-inr" style="font-size:48px;color:rgb(6, 182, 27)"></i>&nbsp;&nbsp;
+					<span class="text">
+						<h3>100</h3>
+						<p>YOUR BALANCE</p><br>
+					</span>
+				</li>
+				<li>
+					&nbsp;<i class="fa fa-plus" style="font-size:30px;color:rgb(6, 182, 27)"></i><i class="fa fa-inr" style="font-size:48px;color:rgb(6, 182, 27)"></i>
+				
+					<span class="text">
+						<h3>ADD BALANCE</h3>
+						<p>OCCUPIED</p><br>
+						<button class="button"  onclick="openForm()"><strong>Click Me</strong></button>
+					
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-calendar-check' ></i>
+					<span class="text">
+						<h3>BOOK SLOATS</h3>
+						<p>BOOK SLOATS</p><br>
+						<button class="button"  onclick="openForm()"><strong>Click Me</strong></button>
+					</span>
+				</li>
+			</ul>
+				<div class="todo" style="margin-top: 50px;">
+					<div class="head" >
+						
+					
+						
+					</div>
+					<ul class="todo-list">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.7268341234976!2d72.54438994976017!3d23.033799984873482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84eaf57ac615%3A0x5c7498bb96b34c97!2sLalbhai%20Dalpatbhai%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1649913431150!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</ul>
+				</div>
+			</div>
+			<div class="loginPopup">
+				<div class="formPopup" id="popupForm">
+				  <form action="/action_page.php" class="formContainer">
+					<h2 style="color: black;" >ADD BALANCE</h2>
+					<label for="email">
+					  <strong>E-mail</strong>
+					</label>
+					<input type="text" id="email" placeholder="Amount" name="email" required>
+					<label for="psw">
+					 
+					<button type="submit" class="btn">Pay</button>
+					<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+				  </form>
+				</div>
+			  </div>
+			  <script>
+				function openForm() {
+				  document.getElementById("popupForm").style.display = "block";
+				}
+				function closeForm() {
+				  document.getElementById("popupForm").style.display = "none";
+				}
+			  </script>
+		</main>
+		<!-- MAIN -->
+	</section>
+
+	<script src="script.js"></script>
+</body>
+</html>

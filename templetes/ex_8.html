@@ -1,0 +1,109 @@
+<html>
+<head>
+    <title>Form</title>
+    <style>
+        input,textarea
+        {
+            margin-left: 20px;
+            font-size: 15px;
+            margin-right: 20px;
+        }
+        .box
+        {
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 50%;
+        }
+        .row
+        {
+            margin-top: 30px;
+            display: flex;
+        }
+        .main
+        {
+            font-size: 20px;
+            padding: 3px;
+            margin-left: 250px;
+            margin-right: 250px; 
+            margin-top: 70px; 
+            background-color: azure;
+            background: -webkit-radial-gradient(right,rgba(248, 231, 231, 0.89),rgba(246, 246, 235, 0.89));
+            }
+    </style>
+</head>
+<body background="newspaper.jpg">
+    <div class="main">
+    <h2 style="text-align: center;">Journalism Course registration form</h2>
+    <form>
+        <div class="row format">
+        <div class="box">
+        <label for="FName" class="alignright">First Name</label>
+        <input type="text" id="FName" placeholder="e.g. Deep">
+        </div>
+        <div class="box">
+        <label for="LName" class="alignleft">Last Name</label>
+        <input type="text" id="LName" placeholder="e.g. Patel">
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="box">
+        <label for="Gender" class="alignright">Gender</label>
+        <input type="radio" name="Gender" id="Male">
+        <label for="Male">Male</label>
+        <input type="radio" name="Gender" id="Female">
+        <label for="Female">Female</label>
+        <input type="radio" name="Gender" id="Other">
+        <label for="Other">Other</label>
+        </div>
+        <div class="box">
+        <label for="DOB" class="alignleft">Date Of Birth</label>
+        <input type="date" id="DOB">
+        </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+        <label for="mail">Mail I'd</label>
+        <input type="email" id="mail" placeholder="e.g. abc@gmail.com"></div><div class="box">
+        <label for="phone number" class="alignleft">Phone Number</label>
+        <input type="number" id="phone number" placeholder="e.g. +917802039051">
+        </div></div>
+
+        <div class="row"><div class="box">
+        <label for="add">Address</label>
+        <textarea name="address" id="add" cols="40" rows="3" placeholder="Address"></textarea></div><div class="box">
+        <label for="hobbie" class="alignleft">Hobbies</label>
+        <input type="checkbox" id="reading" name="hobbie"><label for="reading">Reading</label>
+        <input type="checkbox" id="writing" name="hobbie"><label for="writing">Writing</label>        
+        </div></div>
+    
+        <div class="row">
+            <div class="box">
+        <label for="pi">Political Inclination</label>
+        <select name="pi">
+            <option value="BJP">BJP</option>
+            <option value="cong">Congress</option>
+            <option value="AAP">AAP</option>
+            <option value="No">None</option>
+        </select></div><div class="box">
+        <label for="photo" class="alignleft">Photo</label>
+        <input type="file" name="photo" id="photo">
+        </div></div>
+
+        <div class="row">
+            <div class="box">
+            <label for="un">User Name</label>
+            <input type="text" id="un" placeholder="e.g. abc123@gmail.com"></div><div class="box">
+            <label for="pass" class="alignleft">Password</label>
+            <input type="password" id="pass" placeholder="Password"></div>
+        </div>
+
+        <center style="margin-top: 20px;">
+            <input type="submit">
+            <input type="reset">
+        </center>
+    </form>
+    </div>
+</body>
+</html>

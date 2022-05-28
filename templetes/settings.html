@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ParkingPAY</title>
+    <meta name="description"
+          content="A website for smart parking system"/>
+
+   
+    <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
+
+    
+   
+    <link rel="stylesheet" href="css/default.css" id="theme-color">
+</head>
+<body>
+
+
+
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-8 mx-auto">
+                <h2 class="h3 mb-4 page-title">Settings</h2>
+                <div class="my-4">
+                    <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="by by.html" role="tab" aria-controls="home" aria-selected="false">Profile</a>
+                        </li>
+                    </ul>
+                    <form action="/accounts/settings" method="post">
+                        {% csrf_token %}
+                        <div >
+                            <div>
+                               
+                            </div>
+                            <div>
+                                <div >
+                                   
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-md-7">
+                                        
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="my-4" />
+                        <div class="form-row">
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail4" style="color: black;">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="xyz@gmail.com" />
+                        </div>
+                        
+                        <div class="form-row">
+                           
+                            
+                        </div>
+                        <hr class="my-4" />
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="inputPassword4" style="color: black;">Old Password</label>
+                                    <input type="password" class="form-control" id="inputPassword4" name="password1"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword5" style="color: black;">New Password</label>
+                                    <input type="password" class="form-control" id="inputPassword5" name="password2" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword6" style="color: black;">Confirm Password</label>
+                                    <input type="password" class="form-control" id="inputPassword6" name="password3" />
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save Change</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        </body>
+        </html>
+        
